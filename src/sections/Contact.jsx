@@ -98,7 +98,7 @@ function Contact() {
             </div>
           </div>
           <a
-            href="https://i.imghippo.com/files/q0a6G1715858355.pdf"
+            href="https://i.imghippo.com/files/9Syb21716673297.pdf"
             target="_blank"
           >
             <Button>View Resume</Button>
