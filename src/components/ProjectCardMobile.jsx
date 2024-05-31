@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 
 function ProjectCardMobile({
@@ -11,15 +11,30 @@ function ProjectCardMobile({
   techStack,
   isVideo,
 }) {
+  const [img, setImg] = useState(null);
+
+  useEffect(() => {
+    async function importImage() {
+      const img = await import(`..${image}`);
+      setImg(img.default);
+    }
+    importImage();
+  }, []);
   return (
     <motion.div
       variants={variants}
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.2 }}
-      style={{
-        background: `linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)) , url(${image}) no-repeat ${alignment}/cover`,
-      }}
+      style={
+        img
+          ? {
+              background: `linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)) , url(${img}) no-repeat ${alignment}/cover`,
+            }
+          : {
+              background: `linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)) , url(https://via.placeholder.com/300) no-repeat ${alignment}/cover`,
+            }
+      }
       className="relative flex size-[300px] shrink-0 items-center justify-center overflow-hidden rounded-lg border "
     >
       <motion.div
