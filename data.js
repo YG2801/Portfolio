@@ -51,7 +51,7 @@ const data = {
   ],
   projectsData: [
     {
-      image: "https://i.imghippo.com/files/yj4wr1715621961.png",
+      image: "./src/assets/project-bloggie.png",
       title: "Bloggie",
       liveLink: "https://my-bloggie.vercel.app/",
       githubLink: "https://github.com/YG2801/Bloggie",
@@ -67,7 +67,7 @@ const data = {
       isVideo: false,
     },
     {
-      image: "https://i.imghippo.com/files/4ilx61715697901.png",
+      image: "./src/assets/project-space-tourism-website.png",
       title: "Space Tourism Website",
       liveLink: "https://space-tourism-website-delta-azure.vercel.app/",
       githubLink: "https://github.com/YG2801/Space-tourism-website",
@@ -83,7 +83,7 @@ const data = {
       },
     },
     {
-      image: "https://i.imghippo.com/files/FK5vI1715634461.png",
+      image: "./src/assets/project-quiz-app.png",
       title: "Quiz App",
       liveLink: "https://quiz-app-one-delta.vercel.app/",
       githubLink: "https://github.com/YG2801/Quiz-App",
@@ -97,7 +97,7 @@ const data = {
       isVideo: false,
     },
     {
-      image: "https://i.imghippo.com/files/hgbRG1715608841.png",
+      image: "./src/assets/project-github-profile-finder.png",
       title: "Github User Finder",
       liveLink: "https://github-user-finder-28.vercel.app/",
       githubLink: "https://github.com/YG2801/Github-User-Finder",
@@ -111,7 +111,7 @@ const data = {
       isVideo: false,
     },
     {
-      image: "https://i.imghippo.com/files/dwGUg1715609536.png",
+      image: "./src/assets/project-my-dictionary.png",
       title: "My Dictionary",
       liveLink: "https://my-dictionary-theta.vercel.app/",
       githubLink: "https://github.com/YG2801/My-Dictionary",
@@ -125,7 +125,7 @@ const data = {
       isVideo: false,
     },
     {
-      image: "https://i.imghippo.com/files/cXdoF1715608802.png",
+      image: "./src/assets/project-meloverse.png",
       title: "Meloverse",
       liveLink: "https://meloverse28.netlify.app/",
       githubLink: "https://github.com/YG2801/MeloVerse",
@@ -137,7 +137,7 @@ const data = {
       isVideo: false,
     },
     {
-      image: "https://i.imghippo.com/files/RtGqZ1715628131.png",
+      image: "./src/assets/project-calci.png",
       title: "My Calci",
       liveLink: "https://my-calci-amber.vercel.app/",
       githubLink: "https://github.com/YG2801/Calci",
@@ -150,7 +150,7 @@ const data = {
       isVideo: false,
     },
     {
-      image: "https://i.imghippo.com/files/JNGlc1715628639.png",
+      image: "./src/assets/project-interactive-card-component.png",
       title: "Interactive Card form",
       liveLink: "https://interactive-card-details-form-lime.vercel.app/",
       githubLink: "https://github.com/YG2801/Interactive-card-details-form",
@@ -163,7 +163,7 @@ const data = {
       isVideo: false,
     },
     {
-      image: "https://i.imghippo.com/files/57kDZ1715635246.png",
+      image: "./src/assets/project-single-page-portfolio.png",
       title: "Single page Portfolio",
       liveLink: "https://single-page-portfolio-zeta.vercel.app/",
       githubLink: "https://github.com/YG2801/single-page-portfolio",
@@ -175,7 +175,7 @@ const data = {
       isVideo: false,
     },
     {
-      image: "https://i.imghippo.com/files/MRr011715631732.png",
+      image: "./src/assets/project-dashblend.png",
       title: "Dashblend",
       liveLink:
         "https://drive.google.com/file/d/1VZUnq522C3F-zgKnS2uyxfo_2FHWqa8k/view",
@@ -188,7 +188,7 @@ const data = {
       isVideo: true,
     },
     {
-      image: "https://i.imghippo.com/files/df1nV1715696261.png",
+      image: "./src/assets/project-rock-paper-scissors.png",
       title: "Rock Paper Scissors",
       liveLink: "https://rock-paper-scissors-nine-virid.vercel.app/",
       githubLink: "https://github.com/YG2801/Rock-Paper-Scissors",
@@ -200,7 +200,7 @@ const data = {
       },
     },
     {
-      image: "https://i.imghippo.com/files/BCrm71715634808.png",
+      image: "./src/assets/project-passlock-pro.png",
       title: "Pass Lock Pro",
       liveLink: "https://pass-lock-pro.netlify.app/",
       githubLink: "https://github.com/YG2801/Password-Generator",
