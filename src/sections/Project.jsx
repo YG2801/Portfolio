@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react";
+import React, { useState, useContext, useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 import {
   ProjectCard,
@@ -13,6 +13,22 @@ function Project() {
   const [projectsData, setProjectsData] = useState(data.projectsData);
   const [showMore, setShowMore] = useState(false);
   const windowWidth = useContext(windowWidthContext);
+
+  const [images, setImages] = useState({});
+
+  useEffect(() => {
+    const importImage = import.meta.glob("../assets/project/*.png");
+    const loadImages = async () => {
+      const loadedImages = {};
+      for (const path in importImage) {
+        const module = await importImage[path]();
+        const filename = path.split("/").pop();
+        loadedImages[filename] = module.default;
+      }
+      setImages(loadedImages);
+    };
+    loadImages();
+  }, []);
 
   const parentVariant = {
     hidden: {
@@ -94,6 +110,7 @@ function Project() {
                     variants={childVariant}
                     key={index}
                     {...project}
+                    image={images[project.image]}
                   />
                 );
               else {
@@ -102,6 +119,7 @@ function Project() {
                     variants={childVariant}
                     key={index}
                     {...project}
+                    image={images[project.image]}
                   />
                 );
               }
@@ -113,6 +131,7 @@ function Project() {
                     variants={childVariant}
                     key={index}
                     {...project}
+                    image={images[project.image]}
                   />
                 );
               else {
@@ -121,6 +140,7 @@ function Project() {
                     variants={childVariant}
                     key={index}
                     {...project}
+                    image={images[project.image]}
                   />
                 );
               }

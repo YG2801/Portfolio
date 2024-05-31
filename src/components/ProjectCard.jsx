@@ -13,15 +13,6 @@ function ProjectCard({
 }) {
   const [innerCardVisible, setInnerCardVisible] = useState(false);
   const [centerCoords, setCenterCoords] = useState({ x: 0, y: 0 });
-  const [img, setImg] = useState(null);
-
-  useEffect(() => {
-    async function importImage() {
-      const img = await import(`..${image}`);
-      setImg(img.default);
-    }
-    importImage();
-  }, []);
 
   const cardRef = useRef(null);
 
@@ -77,15 +68,9 @@ function ProjectCard({
       onHoverEnd={handleHoverEnd}
       onMouseMove={handleHoverCard}
       onMouseLeave={() => (cardRef.current.style.transform = "none")}
-      style={
-        img
-          ? {
-              background: `linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)) , url(${img}) no-repeat ${alignment}/cover`,
-            }
-          : {
-              background: `linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)) , url(https://via.placeholder.com/300) no-repeat ${alignment}/cover`,
-            }
-      }
+      style={{
+        background: `linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)) , url(${image}) no-repeat ${alignment}/cover`,
+      }}
       className="relative flex size-[320px] shrink-0 items-center justify-center overflow-hidden rounded-lg border hover:border-none"
     >
       <motion.div
